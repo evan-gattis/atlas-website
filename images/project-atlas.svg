@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Project Atlas placeholder</title><desc id="desc">An abstract terrain and location visual for a project image placeholder.</desc>
+  <rect width="800" height="500" fill="#0d1725"/>
+  <path d="M0 357 125 236l91 72 164-191 130 154 92-78 198 178v129H0Z" fill="#142b46"/>
+  <path d="m0 380 130-112 96 75 152-174 137 156 83-67 202 162" fill="none" stroke="#b3ecff" stroke-opacity=".5" stroke-width="2"/>
+  <circle cx="503" cy="185" r="94" fill="none" stroke="#75d7ff" stroke-width="2"/><circle cx="503" cy="185" r="8" fill="#75d7ff"/>
+  <path d="M503 0v91M503 279v221M318 185h91M597 185h203" stroke="#75d7ff" stroke-opacity=".45" stroke-width="2"/>
+  <text x="40" y="60" fill="#75d7ff" font-family="monospace" font-size="19" letter-spacing="3">PROJECT ATLAS / IMAGE PLACEHOLDER</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Project Relay placeholder</title><desc id="desc">An abstract network visual for a project image placeholder.</desc>
+  <rect width="800" height="500" fill="#091624"/>
+  <g stroke="#b3ecff" stroke-opacity=".4" stroke-width="2"><path d="m138 295 130-118 135 70 131-137 128 87"/><path d="m138 295 265-48 259-50"/><path d="m268 177 266-67"/></g>
+  <g fill="#75d7ff"><circle cx="138" cy="295" r="11"/><circle cx="268" cy="177" r="11"/><circle cx="403" cy="247" r="11"/><circle cx="534" cy="110" r="11"/><circle cx="662" cy="197" r="11"/></g>
+  <g fill="none" stroke="#75d7ff" stroke-opacity=".25"><circle cx="138" cy="295" r="42"/><circle cx="403" cy="247" r="42"/><circle cx="662" cy="197" r="42"/></g>
+  <text x="40" y="60" fill="#75d7ff" font-family="monospace" font-size="19" letter-spacing="3">PROJECT RELAY / IMAGE PLACEHOLDER</text>
+</svg>

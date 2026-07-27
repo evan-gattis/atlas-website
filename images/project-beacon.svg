@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Project Beacon placeholder</title><desc id="desc">An abstract data signal visual for a project image placeholder.</desc>
+  <rect width="800" height="500" fill="#101f34"/>
+  <g stroke="#b3ecff" stroke-opacity=".34" stroke-width="2"><path d="M0 410 145 270l115 84 117-217 102 191 103-99 138 121" fill="none"/><path d="M0 357h800M0 250h800M0 143h800"/></g>
+  <g fill="#75d7ff"><circle cx="145" cy="270" r="8"/><circle cx="377" cy="137" r="8"/><circle cx="662" cy="229" r="8"/></g>
+  <g fill="none" stroke="#75d7ff" stroke-width="2"><circle cx="145" cy="270" r="32"/><circle cx="377" cy="137" r="50"/><circle cx="662" cy="229" r="35"/></g>
+  <text x="40" y="60" fill="#75d7ff" font-family="monospace" font-size="19" letter-spacing="3">PROJECT BEACON / IMAGE PLACEHOLDER</text>
+</svg>
