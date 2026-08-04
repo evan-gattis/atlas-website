@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ATLAS SIGINT — ongoing work to localize radio-frequency jammers and spoofers with TDOA and commercial off-the-shelf SDR hardware.">
+  <title>ATLAS SIGINT | Humla Navigation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header wrap">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="index.html"><img class="brand-logo" src="images/new_atlas_icon.png" alt="" aria-hidden="true"><span>Humla Navigation</span></a>
+      <div class="nav-links"><a href="index.html#work">Our work</a><a href="contacts.html">Contact</a><a class="button" href="contacts.html">Meet the team <span class="arrow">↗</span></a></div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project-hero wrap sigint-hero">
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span> ATLAS SIGINT</div>
+      <div class="project-hero-grid">
+        <div>
+          <div class="eyebrow">ATLAS SIGINT · Ongoing research</div>
+          <h1>Find the signal source, not just the interference.</h1>
+          <p class="project-description">ATLAS SIGINT applies time difference of arrival (TDOA) to radio-frequency signals, with the goal of localizing jammers and spoofers using commercial off-the-shelf software-defined radio hardware.</p>
+          <a class="button button-dark" href="contacts.html">Talk to us <span class="arrow">↗</span></a>
+        </div>
+        <figure class="sigint-hero-visual"><img src="images/atlas_sigint/sigint_setup.jpeg" alt="Android phone connected to a software-defined radio and antenna"><figcaption>Android phone and SDR setup for the ongoing mobile-port effort.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="wrap project-facts">
+      <div class="fact"><span class="meta">Focus</span><strong>Jammer & spoofer localization</strong></div>
+      <div class="fact"><span class="meta">Method</span><strong>Radio-frequency TDOA</strong></div>
+      <div class="fact"><span class="meta">Platform</span><strong>COTS SDR + Android</strong></div>
+    </section>
+
+    <section class="section wrap feature-split sigint-method">
+      <div class="feature-copy"><div class="eyebrow">01 — Shared geometry, harder timing</div><h2>Use TDOA to put a radio emitter on the map.</h2><p>Like ATLAS Gunshot Localization, SIGINT uses arrival-time differences observed at multiple receivers to generate a location estimate. In this case, the observations are radio-frequency signals from a jammer or spoofer rather than acoustic arrivals.</p><p>The challenge is timing: radio signals propagate at the speed of light, not the speed of sound. That makes the synchronization and measurement problem substantially more demanding, while preserving the same core objective—convert multiple observations into a usable map location.</p></div>
+      <div class="sigint-diagram" aria-label="Conceptual time difference of arrival diagram"><span class="sigint-node node-a">Receiver A</span><span class="sigint-node node-b">Receiver B</span><span class="sigint-node node-c">Receiver C</span><span class="sigint-source">RF source</span><span class="sigint-arc arc-one"></span><span class="sigint-arc arc-two"></span><span class="sigint-line line-a"></span><span class="sigint-line line-b"></span><span class="sigint-line line-c"></span></div>
+    </section>
+
+    <section class="section sigint-band">
+      <div class="wrap feature-split sigint-results">
+        <div class="feature-copy"><div class="eyebrow">02 — Field result · Poland</div><h2>Experimental localization of a Russian spoofer.</h2><p>This experimental TDOA result from Poland shows the localization workflow applied to a Russian spoofer. The result was collected with a separate custom-built system—not the Android and SDR setup pictured above.</p><p>That field system cost approximately $1,000. It demonstrates the value of the approach and informs the ongoing work to port the capability into a more accessible phone-connected SDR configuration.</p><div class="result-note"><span class="meta">Important context</span><strong>Field result: custom system (~$1,000)</strong><span>Mobile phone + SDR: ongoing port effort</span></div></div>
+        <figure class="feature-image sigint-result-image"><img src="images/atlas_sigint/russia_spoofer.png" alt="Experimental TDOA map result localizing a Russian spoofer near the Polish coast"><figcaption>Experimental Poland result from the separate custom TDOA system.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section wrap sigint-roadmap">
+      <div class="section-heading"><div><div class="eyebrow">03 — Ongoing mobile port</div><h2>Bring the experiment closer to the edge.</h2></div><p class="section-intro">The current effort is focused on translating the lessons from the custom system into an Android-compatible, phone-connected SDR workflow.</p></div>
+      <div class="roadmap-grid"><div class="roadmap-card"><span class="meta">Current evidence</span><h3>Custom TDOA system</h3><p>Experimental field results demonstrate the radio-frequency localization approach.</p></div><div class="roadmap-card active"><span class="meta">In progress</span><h3>Android + COTS SDR</h3><p>Port the measurement and localization workflow to a mobile, phone-connected setup.</p></div><div class="roadmap-card"><span class="meta">Target outcome</span><h3>Field-ready SIGINT</h3><p>Give teams a practical way to identify and map sources of RF interference.</p></div></div>
+    </section>
+
+    <section class="wrap"><a class="next-project" href="ATLAS_GNSS.html"><span><span class="meta">Return to</span><br>ATLAS GNSS Integrity</span><span class="card-arrow">↗</span></a></section>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-inner"><span>© 2026 Humla Navigation</span><span>Built for the mission edge</span></div></footer>
+</body>
+</html>

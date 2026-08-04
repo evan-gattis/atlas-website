@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ATLAS GNSS Integrity for TAK — detect GNSS jamming and spoofing, visualize integrity, and localize interference.">
+  <title>ATLAS GNSS Integrity | Humla Navigation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header wrap">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="index.html"><img class="brand-logo" src="images/new_atlas_icon.png" alt="" aria-hidden="true"><span>Humla Navigation</span></a>
+      <div class="nav-links"><a href="index.html#work">Our work</a><a href="contacts.html">Contact</a><a class="button" href="contacts.html">Meet the team <span class="arrow">↗</span></a></div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project-hero wrap gnss-hero">
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span> ATLAS GNSS Integrity</div>
+      <div class="project-hero-grid">
+        <div>
+          <div class="eyebrow">ATLAS GNSS · TAK overlay</div>
+          <h1>Know when your position can be trusted.</h1>
+          <p class="project-description">ATLAS GNSS Integrity brings real-time GPS health into TAK—helping teams recognize healthy reception, weak signal conditions, jamming, and spoofing directly on the map.</p>
+          <a class="button button-dark" href="contacts.html">Talk to us <span class="arrow">↗</span></a>
+        </div>
+        <figure class="gnss-hero-visual"><img src="images/atlas_gnss/breadcrumbs_localizing_jammer.png" alt="GNSS integrity breadcrumbs displayed on a TAK map"><figcaption>GNSS integrity breadcrumbs in the TAK map overlay.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="wrap project-facts">
+      <div class="fact"><span class="meta">Focus</span><strong>GNSS integrity awareness</strong></div>
+      <div class="fact"><span class="meta">Interface</span><strong>TAK map overlay</strong></div>
+      <div class="fact"><span class="meta">Outcomes</span><strong>Detection & localization</strong></div>
+    </section>
+
+    <section class="section wrap gnss-overview">
+      <div class="section-heading"><div><div class="eyebrow">01 — At a glance</div><h2>Four signals. One clear operational picture.</h2></div><p class="section-intro">Color-coded status indicators turn GNSS integrity into information that is easy to interpret in the field.</p></div>
+      <div class="status-grid">
+        <figure class="status-card healthy"><img src="images/atlas_gnss/GPS_Overlay_Healthy.png" alt="TAK overlay showing healthy GPS status in green"><figcaption><span class="status-key"></span><div><span class="meta">Green</span><strong>Healthy GPS</strong><p>GPS reception is operating normally.</p></div></figcaption></figure>
+        <figure class="status-card weak"><img src="images/atlas_gnss/GPS_Overlay_Weak.png" alt="TAK overlay showing weak GPS status in gray"><figcaption><span class="status-key"></span><div><span class="meta">Gray</span><strong>Indoors or weak GPS</strong><p>Reception is limited or unavailable.</p></div></figcaption></figure>
+        <figure class="status-card jammed"><img src="images/atlas_gnss/GPS_Overlay_Jammed.png" alt="TAK overlay showing jammed GPS status in red"><figcaption><span class="status-key"></span><div><span class="meta">Red</span><strong>Jammed</strong><p>Interference is affecting GNSS reception.</p></div></figcaption></figure>
+        <figure class="status-card spoofed"><img src="images/atlas_gnss/GPS_Overlay_Spoofed.png" alt="TAK overlay showing spoofed GPS status in purple"><figcaption><span class="status-key"></span><div><span class="meta">Purple</span><strong>Spoofed</strong><p>Signal behavior indicates a spoofing condition.</p></div></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section gnss-band">
+      <div class="wrap feature-split">
+        <div class="feature-copy"><div class="eyebrow">02 — Integrity breadcrumbs</div><h2>Map the quality of GNSS as you move.</h2><p>ATLAS GNSS can plot integrity breadcrumbs along a route, preserving a visual record of GPS conditions across an area. Teams can walk or drive broad coverage patterns and use those observations to identify where interference is concentrated.</p><p>The resulting breadcrumb trail helps operators localize a jammer from field measurements—turning a changing signal environment into a spatially useful picture.</p></div>
+        <figure class="feature-image"><img src="images/atlas_gnss/breadcrumbs_localizing_jammer.png" alt="TAK map showing GNSS breadcrumbs used to localize a jammer"><figcaption>Breadcrumbs show GNSS integrity observations across the operating area.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section wrap feature-split dashboard-split">
+      <figure class="feature-image"><img src="images/atlas_gnss/data_dashboard_page_where_can_record_or_choose_datasets.png" alt="ATLAS GNSS data dashboard for recording and managing datasets"><figcaption>Record new datasets or select prior collections from the dashboard.</figcaption></figure>
+      <div class="feature-copy"><div class="eyebrow">03 — Data dashboard</div><h2>Record, revisit, and manage field datasets.</h2><p>The data dashboard gives users one place to begin a recording session or access previous GNSS datasets. Historical collections can be selected for plotting when the team needs to review a past route or compare conditions.</p><p>When a dataset is no longer needed, it can also be deleted directly from the dashboard—keeping the device focused on the information that matters to the mission.</p></div>
+    </section>
+
+    <section class="section gnss-band">
+      <div class="wrap feature-split indicators-split">
+        <div class="feature-copy"><div class="eyebrow">04 — Detailed indicators</div><h2>See the signals behind the status.</h2><p>For a closer look, the Status Indicators page presents detailed health information for the GNSS signals available to the receiver. Operators can inspect GPS L1 and L5, Galileo E1 and E5, and GLONASS L1 when those bands are available.</p><p>This view gives the team more context when the map overlay calls attention to an integrity issue, including during a suspected spoofing event.</p>
+          <ul class="signal-list"><li>GPS L1</li><li>GPS L5 <span>when available</span></li><li>Galileo E1</li><li>Galileo E5 <span>when available</span></li><li>GLONASS L1 <span>when available</span></li></ul>
+        </div>
+        <figure class="feature-image"><img src="images/atlas_gnss/status_indicators_page_during_spoofing_attack.png" alt="Detailed GNSS status indicators during a spoofing attack"><figcaption>Detailed status indicators during a spoofing condition.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="wrap"><a class="next-project" href="ATLAS_GUNSHOT.html"><span><span class="meta">Next project</span><br>ATLAS Gunshot Localization</span><span class="card-arrow">↗</span></a></section>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-inner"><span>© 2026 Humla Navigation</span><span>Built for the mission edge</span></div></footer>
+</body>
+</html>

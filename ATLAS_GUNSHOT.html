@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ATLAS Gunshot Localization for TAK — collaborative acoustic sensing, TDOA localization, and muzzle-blast detection.">
+  <title>ATLAS Gunshot Localization | Humla Navigation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header wrap">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="index.html"><img class="brand-logo" src="images/new_atlas_icon.png" alt="" aria-hidden="true"><span>Humla Navigation</span></a>
+      <div class="nav-links"><a href="index.html#work">Our work</a><a href="contacts.html">Contact</a><a class="button" href="contacts.html">Meet the team <span class="arrow">↗</span></a></div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project-hero wrap gunshot-hero">
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span> ATLAS Gunshot Localization</div>
+      <div class="project-hero-grid">
+        <div>
+          <div class="eyebrow">ATLAS Gunshot · TAK application</div>
+          <h1>Every connected phone can help locate a shot.</h1>
+          <p class="project-description">ATLAS Gunshot Localization connects GPS-ready phones to a gunshot-processing server. Together, participating devices detect an event and turn its arrival timing into a location on the TAK map.</p>
+          <a class="button button-dark" href="contacts.html">Talk to us <span class="arrow">↗</span></a>
+        </div>
+        <figure class="gunshot-hero-visual"><img src="images/atlas_gunshots/gunshot_detected.png" alt="ATAK map showing a small gray dot titled Gunshot Detected"><figcaption>When a gunshot is detected, ATAK displays a small gray map marker titled “Gunshot Detected.”</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="wrap project-facts">
+      <div class="fact"><span class="meta">Interface</span><strong>One-page TAK front end</strong></div>
+      <div class="fact"><span class="meta">Method</span><strong>Time difference of arrival</strong></div>
+      <div class="fact"><span class="meta">Network</span><strong>Collaborative phone sensing</strong></div>
+    </section>
+
+    <section class="section wrap feature-split gunshot-workflow">
+      <div class="feature-copy"><div class="eyebrow">01 — Simple to join</div><h2>Record when your device is ready.</h2><p>The app keeps the front end focused on one action. When the device has enough GPS satellites, the user can tap Record to connect to the gunshot-processing server and begin contributing observations.</p><p>As more phones participate, the system has more arrival-time measurements to work with when a gunshot occurs.</p><ol class="workflow-list"><li><span>01</span>Confirm GPS readiness</li><li><span>02</span>Tap Record to join</li><li><span>03</span>Share event timing with the processing server</li></ol></div>
+      <figure class="feature-image"><img src="images/atlas_gunshots/atlas_gunshots_mainpage.png" alt="ATLAS Gunshot Localization main recording screen"><figcaption>A single screen for checking GPS readiness and starting a recording session.</figcaption></figure>
+    </section>
+
+    <section class="section gunshot-band">
+      <div class="wrap"><div class="section-heading"><div><div class="eyebrow">02 — TDOA localization</div><h2>Arrival-time differences draw the path to a solution.</h2></div><p class="section-intro">Each device observes a shot at a slightly different time. Those differences generate hyperbolas on the map; their intersection produces a gunshot localization.</p></div>
+        <div class="conops-grid"><figure class="portrait-capture"><img src="images/atlas_gunshots/Anti-sniper_hyperbolas1.png" alt="Anti-sniper concept showing gunshot localization hyperbolas on a map"><figcaption>Anti-pop-shot concept: a small group of phones contributes hyperbolas.</figcaption></figure><figure class="portrait-capture"><img src="images/atlas_gunshots/Anti-sniper_hyperbolas2.png" alt="Anti-sniper concept showing a gunshot localization from several phones"><figcaption>Even a few participating phones can produce a useful localization.</figcaption></figure></div>
+      </div>
+    </section>
+
+    <section class="section wrap dense-section">
+      <div class="section-heading"><div><div class="eyebrow">03 — More sensors, more evidence</div><h2>Dense participation creates a stronger geometric picture.</h2></div><p class="section-intro">With many connected phones, more hyperbolas contribute to the map and support a well-constrained localization solution.</p></div>
+      <div class="dense-grid"><figure class="portrait-capture"><img src="images/atlas_gunshots/ManyHyperbolas.png" alt="Map showing many time-difference-of-arrival hyperbolas"><figcaption>Multiple observations produce a dense set of TDOA hyperbolas.</figcaption></figure><figure class="map-capture"><img src="images/atlas_gunshots/ManyHyperbolas2.png" alt="Map showing gunshot localization generated from many hyperbolas"><figcaption>A larger participating network yields a clear localization solution.</figcaption></figure></div>
+    </section>
+
+    <section class="section gunshot-band">
+      <div class="wrap"><div class="section-heading"><div><div class="eyebrow">04 — Machine-learning model</div><h2>Machine learning for reliable muzzle-blast timing.</h2></div><p class="section-intro">ATLAS identifies the acoustic arrival that matters for localization, even when a shockwave arrives first.</p></div>
+        <div class="model-copy"><p><strong>ATLAS uses a machine-learning model</strong> to distinguish the muzzle-blast sound from a ballistic shockwave when one is present. For a down-range phone and a supersonic projectile, the shockwave can arrive before the muzzle blast; the vertical marker in each example shows the model’s muzzle-blast estimate for the localization workflow.</p></div>
+        <div class="model-grid"><figure class="audio-capture"><img src="images/atlas_gunshots/MuzzleBlastModel_NoShockwave.png" alt="Gunshot audio example without a shockwave, with the model's muzzle blast marker"><figcaption>No shockwave: the model marks the muzzle-blast arrival.</figcaption></figure><figure class="audio-capture"><img src="images/atlas_gunshots/MuzzleBlastModel_Shockwave.png" alt="Gunshot audio example with a preceding shockwave and the model's muzzle blast marker"><figcaption>Shockwave present: the model distinguishes it from the later muzzle blast.</figcaption></figure></div>
+      </div>
+    </section>
+
+    <section class="section wrap gunshot-user-view"><div class="section-heading"><div><div class="eyebrow">User view</div><h2>A concise alert, right on the map.</h2></div><p class="section-intro">From the user’s perspective, the detected event appears as a small gray point on the ATAK map titled “Gunshot Detected.”</p></div><figure class="event-capture"><img src="images/atlas_gunshots/gunshot_detected.png" alt="ATAK map with a small gray dot titled Gunshot Detected"><figcaption>The ATLAS Gunshot user-facing event marker in ATAK.</figcaption></figure></section>
+
+    <section class="wrap"><a class="next-project" href="ATLAS_SIGINT.html"><span><span class="meta">Next project</span><br>ATLAS SIGINT</span><span class="card-arrow">↗</span></a></section>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-inner"><span>© 2026 Humla Navigation</span><span>Built for the mission edge</span></div></footer>
+</body>
+</html>
